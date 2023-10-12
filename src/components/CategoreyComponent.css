@@ -1,0 +1,16 @@
+.Category_tag{
+    background-color: dodgerblue;
+    max-width: fit-content;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    padding: 3px 10px;
+    transition: ease-in 0.5s;
+    cursor: pointer;
+}
+
+.Category_tag:hover{
+    scale: 0.9;
+}

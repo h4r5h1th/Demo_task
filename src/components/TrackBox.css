@@ -1,0 +1,73 @@
+.Progress_Track_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Progress_div{
+    width: 60%;
+    min-width: 280px;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(36, 36, 36, 0.984);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0px;
+    box-shadow: 5px 5px 5px rgb(111, 0, 166);
+}
+
+.Progress_bar_parent{
+    margin-top: 20px;
+    height: 10px;
+    width: 100%;
+    background-color: white;
+    border-radius: 25px;
+    position: relative;
+}
+
+.Track_Tasks{
+    display: flex;
+    flex-direction: column;
+}
+
+.Progress_bar_child{
+    position: absolute;
+    height: 10px;
+    left: 0px;
+    width: 30%;
+    border-radius: 25px;
+    background-color: rgb(86, 0, 172);
+    z-index: 2;
+    transition: ease-in-out 1s;
+}
+
+.Progress_Track{
+    padding-top:10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Total_task{
+    color: rgba(255, 10, 10, 0.938);
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+@media only screen and (min-width: 800px){
+    .Track_Tasks{
+        flex-direction: row;
+    }
+
+    .Progress_Track{
+        padding-left: 20px;
+    }
+}

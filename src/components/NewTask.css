@@ -1,0 +1,93 @@
+.NewTask_div{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    background-color: rgba(53, 53, 53, 0.4);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.NewTask_Main_div{
+    background-color: rgba(31, 31, 31, 0.911);
+    height: fit-content;
+    width: 80%;
+    max-width: 700px;
+    position: relative;
+    border-radius: 25px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.close_NewTask{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: 20px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.close_NewTask > h1{
+    color: rgb(208, 0, 0);
+    font-size: larger;
+}
+
+.NewTask_Main_div > p{
+    padding: 15px 0px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.NewTask_Main_div > input{
+    padding: 3px;
+    padding-left: 10px;
+    border-radius: 5px;
+    color: black;
+    min-height: 18px;
+    border: none;
+    outline: none;
+}
+
+.NewTask_Main_div > input:focus{
+    border: solid 2px rgb(169, 87, 252);
+}
+
+.NewTask_Main_div > select{
+    padding: 3px;
+    padding-left: 10px;
+    border-radius: 5px;
+    color: black;
+    border: none;
+    outline: none;
+}
+
+.NewTask_Main_div > select > option{
+    padding: 3px;
+    padding-left: 10px;
+    color: black;
+    border: none;
+    outline: none;
+}
+
+.NewTask_Main_div > select:focus{
+    border: solid 2px rgb(169, 87, 252);
+}
+
+.NewTask_Main_div > button{
+    padding: 5px;
+    background-color: rgb(138, 63, 213);
+    margin: 20px 0px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: ease-in 0.5s;
+}
+
+.NewTask_Main_div > button:hover{
+    scale: 1.05;
+}

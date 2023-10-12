@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import { createContext, useState } from 'react';
 import './App.css';
+import Categories from './components/Categories';
+import CreateButton from './components/CreateButton';
+import Tasks from './components/Tasks';
+import TitleNav from './components/Title_Nav';
+import TrackBox from './components/TrackBox';
+
+const DBContext = createContext();
+
+export { DBContext };
 
 function App() {
+  const [DBUpdate, SetDBUpdate] = useState(true);
+  const [Specific_Category, SetSpecific_Category] = useState("All")
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <DBContext.Provider value={{DBUpdate, SetDBUpdate}}>
+      <TitleNav/>
+      <TrackBox/>
+      <Categories SetSpecific_Category={SetSpecific_Category}/>
+      <CreateButton/>
+      <Tasks Specific_Category={Specific_Category} SetSpecific_Category={SetSpecific_Category}/>
+    </DBContext.Provider>
     </div>
   );
 }

@@ -1,0 +1,70 @@
+.TaskComponent_div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 500px;
+    border-radius: 25px;
+    background-color: rgba(48, 48, 48, 0.747);
+    margin-bottom: 25px;
+}
+
+.Task_Top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.Task_title_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 15px;
+}
+
+.Tags_Name{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Tags_Name_div{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.Tags_Name_div > button{
+    background-color: rgba(197, 0, 0, 0.932);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    transition: ease-in 0.1s;
+}
+
+.Tags_Name_div > button:active{
+    scale: 0.9;
+}
+
+.options{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width:450px){
+    .Task_Top{
+        flex-direction: column;
+    }
+}

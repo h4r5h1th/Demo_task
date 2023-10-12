@@ -1,0 +1,9 @@
+.Tasks_Parent{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1248px;
+}
